@@ -17,7 +17,7 @@ const PORT = process.env.PORT;
 app.get("/", (req, res) => {
     res.send("home")
 })
-app.listen(PORT, async () => {
+app.listen(PORT || 300, async () => {
     console.log(`Server is live at port: ${PORT}`)
     try {
         await connection
